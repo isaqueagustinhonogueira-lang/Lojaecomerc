@@ -1,9 +1,10 @@
-﻿using LojaEcomerce.Models;
+﻿using LojaEcomerce.Interface;
+using LojaEcomerce.Models;
 using MySql.Data.MySqlClient;
 
 namespace LojaEcomerce.Repositorio
 {
-    public class UsuarioRepositorio
+    public class UsuarioRepositorio : IUsuarioRepositorio
     {
         //variavel privada e somente leitura para
         //receber a conexão do banco de dados
